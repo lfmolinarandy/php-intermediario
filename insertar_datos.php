@@ -2,7 +2,7 @@
 $servername = "sql204.infinityfree.com"; // Cambia esto por el servidor de tu base de datos
 $username = "if0_37787691"; // Cambia esto por tu nombre de usuario
 $password = "YNBYRFGy0NQ1eow"; // Cambia esto por tu contraseña
-$dbname = "if0_37787691_SCADA_PLC"; // Cambia esto por el nombre de tu base de datos
+$dbname = "if0_37787691_XXX"; // Cambia esto por el nombre de tu base de datos
 
 // Crear conexión
 $conn = new mysqli($servername, $username, $password, $dbname);
