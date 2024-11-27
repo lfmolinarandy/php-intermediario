@@ -1,11 +1,8 @@
-# Usar la imagen oficial de PHP con Apache
+# Usa una imagen de Apache con PHP preinstalado
 FROM php:7.4-apache
 
-# Copiar todos los archivos al contenedor
+# Copia los archivos PHP (como insertar_datos.php) al contenedor
 COPY . /var/www/html/
 
-# Configurar el directorio de trabajo
-WORKDIR /var/www/html/
-
-# Exponer el puerto 80 (servidor web)
+# Exponer el puerto 80
 EXPOSE 80
