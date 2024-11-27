@@ -1,7 +1,10 @@
-# Usa una imagen de Apache con PHP preinstalado
+# Usa una imagen de PHP con Apache
 FROM php:7.4-apache
 
-# Copia los archivos PHP (como insertar_datos.php) al contenedor
+# Instala las dependencias necesarias para MySQL y otras extensiones
+RUN docker-php-ext-install mysqli
+
+# Copia los archivos PHP al contenedor
 COPY . /var/www/html/
 
 # Exponer el puerto 80
